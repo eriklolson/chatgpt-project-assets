@@ -1,0 +1,161 @@
+# ========================================
+# 🧭 Global & Project .gitignore — Erik Olson
+# Covers Python, Micromamba, JetBrains, Direnv, and Jira CLI
+# ========================================
+
+# ========================================
+# Jira CLI (per-project configs)
+# ========================================
+.jira/
+!.jira/config.yml.tmpl     # Keep the template under version control
+!.jira/README.md
+
+# ========================================
+# Byte-compiled / optimized / DLL files
+# ========================================
+__pycache__/
+*.py[cod]
+*.class
+
+# ========================================
+# C extensions
+# ========================================
+*.so
+
+# ========================================
+# Distribution / packaging
+# ========================================
+.Python
+env/
+envs/
+venv/
+ENV/
+ENVS/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+*.whl
+
+# ========================================
+# Virtual Environments (Micromamba / Mamba)
+# ========================================
+.mamba/
+.micromamba/
+micromamba_env/
+conda-meta/
+env/
+envs/
+
+# Optional lockfiles (ignore if generated dynamically)
+*.lock
+
+# ========================================
+# Environment files (optional)
+# ========================================
+# Uncomment if you generate these automatically:
+# environment.yml
+# conda-environment.yml
+
+# ========================================
+# PyInstaller
+# ========================================
+*.manifest
+*.spec
+
+# ========================================
+# Secrets
+# ========================================
+.env
+.env.*
+.envs/
+secrets/
+*.secret
+auth/
+
+# ========================================
+# Installer logs
+# ========================================
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ========================================
+# Unit test / coverage reports
+# ========================================
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ========================================
+# Jupyter Notebook
+# ========================================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ========================================
+# IDEs and editors
+# ========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ========================================
+# Direnv / Environment Automation
+# ========================================
+.envrc
+.direnv/
+config/dev_context.yaml
+
+# ========================================
+# macOS / Linux / Windows system files
+# ========================================
+.DS_Store
+.Trashes
+ehthumbs.db
+Icon?
+Thumbs.db
+desktop.ini
+
+# ========================================
+# Logs / Cache / Temp
+# ========================================
+*.log
+*.tmp
+*.swp
+*~
+.cache/
+logs/
+tmp/
+__tmp__/
+
+# ========================================
+# Backup / Editor artifacts
+# ========================================
+*.bak
+*.old
+*.orig
+*.save
+*.backup
